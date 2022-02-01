@@ -1,6 +1,99 @@
+.screen
+{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        width: 75%;
+        height: 400px;
+        text-align: center;
+	line-height: 350px;
+	font-size: 150%;
+        color: white;
+	border: 10px solid darkred;
+}
+.controlRow
+{
+        margin: auto;
+        width: 75%;
+}
+.joystick
+{
+        float: left;
+        width: 100px;
+        height: 100px;
+}
+.button
+{
+        float: right;
+        width: 100px;
+        height: 100px;
+}
+.theField { margin-left: 50px; }
+.fieldRow { float: left; }
+.wrongBush
+{
+	height: 100px;
+	width: 100px;
+}
+.wrongBush img
+{
+	height: 100px;
+	width: 100px;
+}
+.wrongBush img:hover { display: none; }
+.rightBush
+{
+	height: 100px;
+	width: 100px;
+	background-image: url('rowlet.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.rightBush img
+{
+	height: 100px;
+	width: 100px;
+}
+.rightBush img:hover { display: none; }
+@media (min-width: 48em)
+{
+	.navbar-nav
+	{
+		margin-left: auto!important;
+		margin-right: 0!important;
+	}
+	.screen
+	{
+		width: 40%;
+	}
+	.controlRow
+	{
+		width: 40%;
+	}
+	.joystick
+	{
+		width: 200px;
+		height: 200px;
+		margin-left: 100px;
+	}
+	.button
+	{
+		width: 200px;
+		height: 200px;
+		margin-right: 100px;
+	}
+	.theField { margin-left: 40%; }
+}
 body
 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+.footer
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
