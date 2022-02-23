@@ -24,7 +24,7 @@
                                                         <a class="nav-link" href="pokemonFinder.html">Find the Pokemon!</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                        <a class="nav-link active" href="galaga.html">"Galaga"</a>
+                                                        <a class="nav-link active" href="cards.html">Card Deck</a>
                                                 </li>
                                                 <li class="nav-item">
                                                         <a class="nav-link" href="contact.html">Contact</a>
@@ -34,18 +34,18 @@
                 </nav>
         </header>
         <body>
-		<p><br></p>
-		<div class="screen">
-			<p>Out of Order!</p>
-		</div>
-		<p><br></p>
-		<div class="controlRow">
-			<img class="joystick" src="joystick.jpg"/>
-			<img class="button" src="arcadeButton.jpg"/>
-		</div>
+		<form>
+			<label>Enter the number of cards you would like to draw from a deck</label>
+			<input id="drawNumber" type="text"></input><br/>
+			<input id="newDeckButton" type="submit" value="Create New Deck"></input>
+			<input id="shuffleButton" type="submit" value="Shuffle Current Deck"></input>
+			<input id="drawButton" type="submit" value="Draw Chosen # of Cards"></input>
+		<div id="deck"></div>
+		<div id="yourHand"></div>
         </body>
         <div class='footer'>
                 <p><a href="https://github.com/FourIFreaky/cp1">Git Repository</a></p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script text="type/javascript" src="/script.js"></script>
 </html>
