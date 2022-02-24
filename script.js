@@ -31,10 +31,6 @@ document.getElementById("drawButton").addEventListener("click", function(event)
 		const value = document.getElementById("drawNumber").value;
 		if(value === "")
 			return;
-		//if(value >== 52 || value === 0)
-		//{
-		//	return;
-		//}
 		console.log(value);
 		const url3 = "https://deckofcardsapi.com/api/deck/" + deckName + "/draw/?count=" + value;
 		fetch(url3)
@@ -43,7 +39,7 @@ document.getElementById("drawButton").addEventListener("click", function(event)
 			}).then(function(json) {
 				hand = "";
 				for(let i = 0; i < json.cards.length; i++) {
-					hand += '<img src="https://deckofcardsapi.com/static/img/' + json.cards[i].code + '.png"/>';
+					hand += '<div id="oneCard"><img src="https://deckofcardsapi.com/static/img/' + json.cards[i].code + '.png"/></div>';
 				}
 				document.getElementById("yourHand").innerHTML += hand; 
 			});
