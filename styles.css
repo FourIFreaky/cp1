@@ -91,6 +91,10 @@
 		margin-right: auto;
 		padding: 5px;
 	}
+	#oneCard
+	{
+		width: 20%;
+	}
 }
 body
 {
