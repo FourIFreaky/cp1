@@ -29,8 +29,8 @@ document.getElementById("drawButton").addEventListener("click", function(event)
 	{
 		event.preventDefault();
 		const value = document.getElementById("drawNumber").value;
-		if(value === "")
-			return;
+		if(value === "") { return; }
+		if(parseInt(value) > 52 || parseInt(value) == 0) { return; }
 		console.log(value);
 		const url3 = "https://deckofcardsapi.com/api/deck/" + deckName + "/draw/?count=" + value;
 		fetch(url3)
