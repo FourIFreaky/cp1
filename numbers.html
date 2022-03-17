@@ -46,50 +46,108 @@
         <div id="grid">
             <div id="gridColumn">
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                    v-on:click="activateSquare(0), deactivateSquare(1), deactivateSquare(3)">Click
-                        Me!</button>
+                    <div v-if="grid[0]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(0), deactivateSquare(1), deactivateSquare(3)">Click Me!</button>
+                    </div>
+                    <div v-else>
+                        <button v-on:click="activateSquare(0), deactivateSquare(1), deactivateSquare(3)">Click
+                            Me!</button>
+                    </div>
                 </div>
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                        v-on:click="activateSquare(3), deactivateSquare(0), deactivateSquare(4), deactivateSquare(6)">Click
-                        Me!</button>
+                    <div v-if="grid[3]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(3), deactivateSquare(0), deactivateSquare(4), deactivateSquare(6)">Click
+                            Me!</button>
+                    </div>
+                    <div v-else>
+                        <button
+                            v-on:click="activateSquare(3), deactivateSquare(0), deactivateSquare(4), deactivateSquare(6)">Click
+                            Me!</button>
+                    </div>
                 </div>
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                    v-on:click="activateSquare(6), deactivateSquare(3), deactivateSquare(7)">Click Me!</button>
+                    <div v-if="grid[6]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(6), deactivateSquare(3), deactivateSquare(7)">Click Me!</button>
+                    </div>
+                    <div v-else>
+                        <button v-on:click="activateSquare(6), deactivateSquare(3), deactivateSquare(7)">Click
+                            Me!</button>
+                    </div>
                 </div>
             </div>
             <div id="gridColumn">
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                        v-on:click="activateSquare(1), deactivateSquare(0), deactivateSquare(2). deactivateSquare(4)">Click
-                        Me!</button>
+                    <div v-if="grid[1]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(1), deactivateSquare(0), deactivateSquare(2), deactivateSquare(4)">Click
+                            Me!</button>
+                    </div>
+                    <div v-else>
+                        <button
+                            v-on:click="activateSquare(1), deactivateSquare(0), deactivateSquare(2), deactivateSquare(4)">Click
+                            Me!</button>
+                    </div>
                 </div>
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                        v-on:click="activateSquare(4), deactivateSquare(1), deactivateSquare(3), deactivateSquare(5), deactivateSquare(7)">Click
-                        Me!</button>
+                    <div v-if="grid[4]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(4), deactivateSquare(1), deactivateSquare(3), deactivateSquare(5), deactivateSquare(7)">Click
+                            Me!</button>
+                    </div>
+                    <div v-else>
+                        <button
+                            v-on:click="activateSquare(4), deactivateSquare(1), deactivateSquare(3), deactivateSquare(5), deactivateSquare(7)">Click
+                            Me!</button>
+                    </div>
                 </div>
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                        v-on:click="activateSquare(7), deactivateSquare(4), deactivateSquare(6), deactivateSquare(8)">Click
-                        Me!</button>
+                    <div v-if="grid[7]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(7), deactivateSquare(4), deactivateSquare(6), deactivateSquare(8)">Click
+                            Me!</button>
+                    </div>
+                    <div v-else>
+                        <button
+                            v-on:click="activateSquare(7), deactivateSquare(4), deactivateSquare(6), deactivateSquare(8)">Click
+                            Me!</button>
+                    </div>
                 </div>
             </div>
             <div id="gridColumn">
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                    v-on:click="activateSquare(2), deactivateSquare(1), deactivateSquare(5)">Click Me!</button>
+                    <div v-if="grid[2]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(2), deactivateSquare(1), deactivateSquare(5)">Click Me!</button>
+                    </div>
+                    <div v-else>
+                        <button v-on:click="activateSquare(2), deactivateSquare(1), deactivateSquare(5)">Click
+                            Me!</button>
+                    </div>
                 </div>
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                        v-on:click="activateSquare(5), deactivateSquare(2), deactivateSquare(4), deactivateSquare(8)">Click
-                        Me!</button>
+                    <div v-if="grid[5]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(5), deactivateSquare(2), deactivateSquare(4), deactivateSquare(8)">Click
+                            Me!</button>
+                    </div>
+                    <div v-else>
+                        <button
+                            v-on:click="activateSquare(5), deactivateSquare(2), deactivateSquare(4), deactivateSquare(8)">Click
+                            Me!</button>
+                    </div>
                 </div>
                 <div id="square">
-                    <button style="background-color: Crimson;"
-                    v-on:click="activateSquare(8), deactivateSquare(5), deactivateSquare(7)">Click Me!</button>
+                    <div v-if="grid[8]">
+                        <button style="background-color: Crimson;"
+                            v-on:click="activateSquare(8), deactivateSquare(5), deactivateSquare(7)">Click Me!</button>
+                    </div>
+                    <div v-else>
+                        <button v-on:click="activateSquare(8), deactivateSquare(5), deactivateSquare(7)">Click
+                            Me!</button>
+                    </div>
                 </div>
             </div>
         </div>
