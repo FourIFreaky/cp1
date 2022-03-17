@@ -41,3 +41,7 @@ document.getElementById("drawButton").addEventListener("click", function (event)
 			document.getElementById("yourHand").innerHTML += hand;
 		});
 });
+
+let app = new Vue({
+	
+})
